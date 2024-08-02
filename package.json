@@ -1,0 +1,38 @@
+{
+  "name": "wekan",
+  "private": true,
+  "version": "v7.51.0",
+  "description": "Open-Source kanban",
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "homepage": "https://wekan.github.io",
+  "dependencies": {
+    "@babel/runtime": "^7.23.5",
+    "@rwap/jquery-ui-touch-punch": "^1.0.11",
+    "@wekanteam/exceljs": "github:wekan/exceljs",
+    "@wekanteam/html-to-markdown": "^1.0.2",
+    "@wekanteam/ldapjs": "github:wekan/node-ldapjs",
+    "dompurify": "^3.1.6",
+    "filesize": "^10.1.4",
+    "jquery": "^3.7.1",
+    "jquery-ui": "^1.13.3",
+    "jszip": "^3.10.1",
+    "markdown-it": "^14.1.0",
+    "markdown-it-emoji": "^3.0.0",
+    "markdown-it-mathjax3": "^4.3.2",
+    "meteor-node-stubs": "^1.2.7",
+    "minio": "^8.0.1",
+    "papaparse": "^5.4.1"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
