@@ -32,11 +32,8 @@ do
 		        echo "macOS";
 			brew install npm
 			npm -g install n
-			export N_NODE_MIRROR=https://github.com/wekan/node-v14-esm/releases/download
-			n 14.21.4
-			npm -g uninstall node-pre-gyp
-			npm -g install @mapbox/node-pre-gyp
-			npm -g install meteor
+			n 20.16.0
+			npx meteor
 		elif [[ "$OSTYPE" == "cygwin" ]]; then
 		        # POSIX compatibility layer and Linux environment emulation for Windows
 		        echo "TODO: Add Cygwin";
