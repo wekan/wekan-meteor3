@@ -14,7 +14,6 @@ tracker                 # Meteor's client-side reactive programming library
 
 standard-minifier-css@1.9.3   # CSS minifier run for production mode
 standard-minifier-js@3.0.0    # JS minifier run for production mode
-es5-shim                # ECMAScript 5 compatibility for older browsers
 ecmascript@0.16.9              # Enable ECMAScript2015+ syntax in app code
 typescript@5.4.3              # Enable TypeScript syntax in .ts and .tsx modules
 shell-server@0.6.0            # Server-side component of the `meteor shell` command
@@ -32,7 +31,6 @@ check
 email
 google-oauth
 google-config-ui
-id-map
 rocketchat:ldapjs
 rocketchat:oauth2-server
 accounts-github
@@ -46,29 +44,13 @@ jam:easy-schema
 jam:pub-sub
 jam:method
 jam:mongo-transactions
-mquandalle:jade
 session
 random
-mousetrap:mousetrap
-mquandalle:mousetrap-bindglobal
-meteor-autosize
-msavin:usercache
-dynamic-import
 quave:aggregate
-wekan-markdown
 ostrio:cookies
-fortawesome:fontawesome
-logging
 wekan-fullcalendar
-momentjs:moment
-idmontie:migrations
 cottz:publish-relations
-dburles:collection-helpers
-wekan-bootstrap-datepicker
-kadira:dochead
-audit-argument-checks
 wekan-accounts-sandstorm
 wekan-accounts-lockout
 wekan-oidc
 wekan-accounts-oidc
-wekan-accounts-cas
