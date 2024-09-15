@@ -13,20 +13,22 @@
   "dependencies": {
     "@babel/runtime": "^7.23.5",
     "@rwap/jquery-ui-touch-punch": "^1.0.11",
+    "@wekanteam/dragscroll": "github:wekan/dragscroll",
     "@wekanteam/exceljs": "github:wekan/exceljs",
     "@wekanteam/html-to-markdown": "^1.0.2",
-    "@wekanteam/ldapjs": "github:wekan/node-ldapjs",
     "dompurify": "^3.1.6",
     "filesize": "^10.1.4",
     "jquery": "^3.7.1",
     "jquery-ui": "^1.13.3",
     "jszip": "^3.10.1",
+    "ldapjs": "^2.3.3",
     "markdown-it": "^14.1.0",
     "markdown-it-emoji": "^3.0.0",
     "markdown-it-mathjax3": "^4.3.2",
     "meteor-node-stubs": "^1.2.7",
     "minio": "^8.0.1",
-    "papaparse": "^5.4.1"
+    "papaparse": "^5.4.1",
+    "uuid": "^10.0.0"
   },
   "meteor": {
     "mainModule": {
