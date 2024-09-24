@@ -40,7 +40,8 @@ wekan-accounts-lockout
 wekan-oidc
 wekan-accounts-oidc
 wekan-fullcalendar
-wekan-markdown
+# Broken:
+#wekan-markdown
 wekan-fontawesome
 
 # Quave
