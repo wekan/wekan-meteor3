@@ -15,6 +15,25 @@ Fixing other platforms In Progress.
 
 [How to upgrade WeKan](https://github.com/wekan/wekan/issues/4585)
 
+# Upcoming WeKan ® release
+
+This release fixes the following SECURITY ISSUES found by Dependabot:
+
+- [Fixed all 79 open Dependabot alerts by updating react-router, dompurify, markdown-it, linkify-it, brace-expansion, minimatch, fast-xml-parser, file-type, ip-address, qs, uuid, tmp, moment and bn.js. npm audit shows 0 vulnerabilities](https://github.com/wekan/wekan-meteor3/commit/a36e2a0fc35120ebf62646bfe83d711a80c74a69).
+  Thanks to dependabot and xet7.
+
+and updates the following dependencies:
+
+- [Updated to Meteor 3.6.1 with the Rspack bundler and the modern build stack, and to newest npm dependencies: react-router 8, i18next 27, jquery 4, markdown-it 15, file-type 22, framer-motion 14, pretty-ms 10, uuid 14 and @babel/runtime 8](https://github.com/wekan/wekan-meteor3/commit/a36e2a0fc35120ebf62646bfe83d711a80c74a69).
+  Thanks to developers of dependencies and xet7.
+
+and fixes the following bugs:
+
+- [The client now starts in a browser: it is built with Rspack, implicit global collections are declared, and the five missing translation files es-CO, fr-BE, fr-CA, ja-JP and pt-PT are added from WeKan](https://github.com/wekan/wekan-meteor3/commit/a36e2a0fc35120ebf62646bfe83d711a80c74a69).
+  Thanks to xet7.
+
+Thanks to above GitHub users for their contributions and translators for their translations.
+
 # v7.80 2025-01-12 WeKan ® release
 
 This release fixes the following bugs:
