@@ -19,61 +19,75 @@
     "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
   "dependencies": {
-    "@babel/runtime": "^7.28.4",
+    "@babel/runtime": "^8.1.3",
     "@rwap/jquery-ui-touch-punch": "^1.1.5",
+    "@swc/helpers": "^0.5.24",
     "@wekanteam/dragscroll": "https://github.com/wekan/dragscroll.git",
     "@wekanteam/exceljs": "https://github.com/wekan/exceljs.git",
-    "@wekanteam/html-to-markdown": "^1.0.2",
-    "@wekanteam/meteor-globals": "^1.1.4",
-    "@wekanteam/meteor-reactive-cache": "^1.0.6",
+    "@wekanteam/html-to-markdown": "^1.0.3",
+    "@wekanteam/meteor-globals": "^1.1.6",
+    "@wekanteam/meteor-reactive-cache": "^1.0.9",
     "bcrypt": "^6.0.0",
-    "dompurify": "^3.3.0",
+    "dompurify": "^3.4.18",
     "escape-string-regexp": "^5.0.0",
-    "file-type": "^21.1.1",
-    "filesize": "^11.0.13",
-    "framer-motion": "^12.23.25",
+    "file-type": "^22.3.0",
+    "filesize": "^11.0.35",
+    "framer-motion": "^14.14.0",
     "history": "^5.3.0",
-    "i18next": "^25.7.1",
+    "i18next": "^27.2.2",
     "i18next-sprintf-postprocessor": "^0.2.2",
-    "jquery": "^3.7.1",
-    "jquery-ui": "^1.14.1",
-    "jszip": "^3.10.1",
+    "jquery": "^4.1.0",
+    "jquery-ui": "^1.14.2",
+    "jszip": "^3.10.2",
     "ldapjs": "^3.0.2",
-    "markdown-it": "^14.1.0",
-    "markdown-it-emoji": "^3.0.0",
+    "markdown-it": "^15.0.3",
+    "markdown-it-emoji": "^3.1.0",
     "markdown-it-mathjax3": "^5.2.0",
     "meteor-accounts-t9n": "^2.6.0",
-    "meteor-node-stubs": "^1.2.24",
-    "moment": "^2.30.1",
+    "meteor-node-stubs": "^1.2.32",
+    "moment": "^2.31.0",
     "os": "^0.1.2",
-    "papaparse": "^5.5.3",
-    "pretty-ms": "^9.3.0",
-    "qs": "^6.14.0",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
+    "papaparse": "^5.7.1",
+    "pretty-ms": "^10.0.0",
+    "qs": "^6.17.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "react-helmet": "^6.1.0",
-    "react-hook-form": "^7.68.0",
-    "react-router": "^7.10.0",
-    "react-router-dom": "^7.10.0",
-    "strtok3": "^10.3.4",
-    "uuid": "^13.0.0"
+    "react-hook-form": "^7.92.0",
+    "react-router": "^8.5.2",
+    "strtok3": "^10.8.0",
+    "uuid": "^14.0.3"
   },
   "devDependencies": {
-    "@types/meteor": "^2.9.10",
+    "@meteorjs/rspack": "^3.0.0",
+    "@rsdoctor/rspack-plugin": "^1.6.5",
+    "@rspack/cli": "^2.3.3",
+    "@rspack/core": "^2.3.3",
+    "@rspack/dev-server": "^2.2.2",
+    "@rspack/plugin-react-refresh": "^2.0.3",
+    "@swc/core": "^1.16.22",
+    "@types/meteor": "^2.9.11",
     "@types/mocha": "^10.0.10",
-    "@types/react": "^19.2.7",
-    "@types/react-dom": "^19.2.3",
-    "chai": "^6.2.1"
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "chai": "^6.3.0",
+    "react-refresh": "^0.19.0"
   },
   "meteor": {
     "mainModule": {
       "client": "client/main.jsx",
       "server": "server/main.js"
     },
-    "testModule": "tests/main.js"
+    "testModule": "tests/main.js",
+    "modern": true
   },
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=9.0.0"
+  },
+  "overrides": {
+    "readdir-glob": {
+      "minimatch": "^11.0.9"
+    }
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router';
 import { App } from '../App.jsx';
 import { DrawingBoard } from '../DrawingBoard.jsx';
 import { DrawingBoard } from '../DrawingBoard.jsx';

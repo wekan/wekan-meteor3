@@ -11,7 +11,7 @@ import {
 import Attachments, { fileStoreStrategyFactory } from "./attachments";
 import { copyFile } from './lib/fileStoreStrategy.js';
 
-Cards = new Mongo.Collection('cards');
+const Cards = globalThis.Cards = new Mongo.Collection('cards');
 
 // XXX To improve pub/sub performances a card document should include a
 // de-normalized number of comments so we don't have to publish the whole list

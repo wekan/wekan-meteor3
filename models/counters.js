@@ -1,1 +1,1 @@
-Counters = new Mongo.Collection('counters');
+const Counters = globalThis.Counters = new Mongo.Collection('counters');

@@ -13,7 +13,7 @@ import {
 import Users from "./users";
 
 // Global collection definition
-Boards = new Mongo.Collection('boards');
+const Boards = globalThis.Boards = new Mongo.Collection('boards');
 
 /**
  * This is a Board.

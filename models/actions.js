@@ -1,7 +1,7 @@
 import { ReactiveCache } from '/imports/reactiveCache';
 import { Meteor } from 'meteor/meteor';
 
-Actions = new Mongo.Collection('actions');
+const Actions = globalThis.Actions = new Mongo.Collection('actions');
 
 Actions.allow({
   insert(userId, doc) {

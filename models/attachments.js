@@ -46,7 +46,7 @@ export const fileStoreStrategyFactory = new FileStoreStrategyFactory(AttachmentS
 // XXX Enforce a schema for the Attachments FilesCollection
 // see: https://github.com/VeliovGroup/Meteor-Files/wiki/Schema
 
-Attachments = new FilesCollection({
+const Attachments = globalThis.Attachments = new FilesCollection({
   debug: false, // Change to `true` for debugging
   collectionName: 'attachments',
   allowClientCode: true,

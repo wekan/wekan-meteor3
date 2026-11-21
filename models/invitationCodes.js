@@ -2,7 +2,7 @@ import { EasySchema } from 'meteor/jam:easy-schema';
 
 import { ReactiveCache } from '/imports/reactiveCache';
 
-InvitationCodes = new Mongo.Collection('invitation_codes');
+const InvitationCodes = globalThis.InvitationCodes = new Mongo.Collection('invitation_codes');
 
 InvitationCodes.schema = 
   {

@@ -1,6 +1,6 @@
 import { ReactiveCache } from '/imports/reactiveCache';
 
-RulesHelper = {
+const RulesHelper = globalThis.RulesHelper = {
   executeRules(activity) {
     const matchingRules = this.findMatchingRules(activity);
     for (let i = 0; i < matchingRules.length; i++) {

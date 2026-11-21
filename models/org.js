@@ -2,7 +2,7 @@ import { EasySchema } from 'meteor/jam:easy-schema';
 
 import { ReactiveCache } from '/imports/reactiveCache';
 
-Org = new Mongo.Collection('org');
+const Org = globalThis.Org = new Mongo.Collection('org');
 
 /**
  * A Organization in Wekan. A Enterprise in Trello.

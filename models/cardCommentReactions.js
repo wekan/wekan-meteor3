@@ -16,7 +16,7 @@ const commentReactionSchema = {
   userIds: { type: [String], defaultValue: [] }
 });
 
-CardCommentReactions = new Mongo.Collection('card_comment_reactions');
+const CardCommentReactions = globalThis.CardCommentReactions = new Mongo.Collection('card_comment_reactions');
 
 /**
  * All reactions of a card comment

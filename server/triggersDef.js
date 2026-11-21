@@ -1,4 +1,4 @@
-TriggersDef = {
+const TriggersDef = globalThis.TriggersDef = {
   createCard: {
     matchingFields: [
       'boardId',

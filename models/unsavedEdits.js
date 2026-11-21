@@ -2,7 +2,7 @@ import { EasySchema } from 'meteor/jam:easy-schema';
 
 // This collection shouldn't be manipulated directly by instead throw the
 // `UnsavedEdits` API on the client.
-UnsavedEditCollection = new Mongo.Collection('unsaved-edits');
+const UnsavedEditCollection = globalThis.UnsavedEditCollection = new Mongo.Collection('unsaved-edits');
 
 UnsavedEditCollection.schema = 
   {

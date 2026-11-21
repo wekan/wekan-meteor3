@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router';
 import { useTracker } from 'meteor/react-meteor-data';
 import { ReactiveCache } from '/imports/reactiveCache';
 

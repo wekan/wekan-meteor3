@@ -10,7 +10,7 @@ import { ReactiveCache } from '/imports/reactiveCache';
 // instance if a user archive a card, and un-archive it a few seconds later we
 // should remove both activities assuming it was an error the user decided to
 // revert.
-Activities = new Mongo.Collection('activities');
+const Activities = globalThis.Activities = new Mongo.Collection('activities');
 
 Activities.helpers({
   board() {

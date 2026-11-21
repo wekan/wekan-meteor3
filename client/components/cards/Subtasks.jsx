@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useTracker } from 'meteor/react-meteor-data';
 import { Meteor } from 'meteor/meteor';
 import { ReactiveCache } from '/imports/reactiveCache';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 
 // Import translations
 import enTranslations from '/imports/i18n/data/en.i18n.json';

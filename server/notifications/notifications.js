@@ -9,7 +9,7 @@
 //   see example call to Notifications.notify() in models/activities.js
 const notifyServices = {};
 
-Notifications = {
+const Notifications = globalThis.Notifications = {
   subscribe: (serviceName, callback) => {
     notifyServices[serviceName] = callback;
   },

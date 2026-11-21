@@ -45,7 +45,7 @@ if (Meteor.isServer) {
 
 const fileStoreStrategyFactory = new FileStoreStrategyFactory(FileStoreStrategyFilesystem, storagePath, FileStoreStrategyGridFs, avatarsBucket);
 
-Avatars = new FilesCollection({
+const Avatars = globalThis.Avatars = new FilesCollection({
   debug: false, // Change to `true` for debugging
   collectionName: 'avatars',
   allowClientCode: true,

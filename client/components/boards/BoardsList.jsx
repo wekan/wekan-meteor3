@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTracker } from 'meteor/react-meteor-data';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import { Meteor } from 'meteor/meteor';
 import { Session } from 'meteor/session';
 import { ReactiveCache } from '/imports/reactiveCache';

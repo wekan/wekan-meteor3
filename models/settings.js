@@ -10,7 +10,7 @@ import { TAPi18n } from '/imports/i18n';
 const isSandstorm =
   Meteor.settings && Meteor.settings.public && Meteor.settings.public.sandstorm;
 
-Settings = new Mongo.Collection('settings');
+const Settings = globalThis.Settings = new Mongo.Collection('settings');
 
 Settings.schema = 
   {

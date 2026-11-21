@@ -2,7 +2,7 @@ import { EasySchema } from 'meteor/jam:easy-schema';
 
 import { ReactiveCache } from '/imports/reactiveCache';
 
-TableVisibilityModeSettings = new Mongo.Collection('tableVisibilityModeSettings');
+const TableVisibilityModeSettings = globalThis.TableVisibilityModeSettings = new Mongo.Collection('tableVisibilityModeSettings');
 
 TableVisibilityModeSettings.schema = 
   {

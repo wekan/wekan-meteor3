@@ -2,7 +2,7 @@ import { EasySchema } from 'meteor/jam:easy-schema';
 
 import { ReactiveCache } from '/imports/reactiveCache';
 
-AccountSettings = new Mongo.Collection('accountSettings');
+const AccountSettings = globalThis.AccountSettings = new Mongo.Collection('accountSettings');
 
 AccountSettings.schema = 
   {

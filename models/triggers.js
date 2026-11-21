@@ -2,7 +2,7 @@ import { ReactiveCache } from '/imports/reactiveCache';
 import { Meteor } from 'meteor/meteor';
 import { Mongo } from 'meteor/mongo';
 
-Triggers = new Mongo.Collection('triggers');
+const Triggers = globalThis.Triggers = new Mongo.Collection('triggers');
 
 Triggers.mutations({
   rename(description) {

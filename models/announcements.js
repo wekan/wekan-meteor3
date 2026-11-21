@@ -2,7 +2,7 @@ import { Mongo } from 'meteor/mongo';
 import { ReactiveCache } from '/imports/reactiveCache';
 
 // Global collection definition
-Announcements = new Mongo.Collection('announcements');
+const Announcements = globalThis.Announcements = new Mongo.Collection('announcements');
 
 // Note: jam:easy-schema uses plain objects for schemas
 Announcements.schema = {

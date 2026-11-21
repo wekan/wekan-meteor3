@@ -2,7 +2,7 @@ import { EasySchema } from 'meteor/jam:easy-schema';
 
 import { ReactiveCache, ReactiveMiniMongoIndex } from '/imports/reactiveCache';
 
-Checklists = new Mongo.Collection('checklists');
+const Checklists = globalThis.Checklists = new Mongo.Collection('checklists');
 
 /**
  * A Checklist

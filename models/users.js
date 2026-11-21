@@ -4,7 +4,7 @@ import { ReactiveCache } from '/imports/reactiveCache';
 import { SyncedCron } from 'meteor/quave:synced-cron';
 
 // Global collection definition
-Users = Meteor.users;
+const Users = globalThis.Users = Meteor.users;
 
 const allowedSortValues = [
   '-modifiedAt',

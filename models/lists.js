@@ -3,7 +3,7 @@ import { EasySchema } from 'meteor/jam:easy-schema';
 import { ReactiveCache } from '/imports/reactiveCache';
 import { ALLOWED_COLORS } from '/config/const';
 
-Lists = new Mongo.Collection('lists');
+const Lists = globalThis.Lists = new Mongo.Collection('lists');
 
 /**
  * A list (column) in the Wekan board.

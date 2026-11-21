@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTracker } from 'meteor/react-meteor-data';
 import { Meteor } from 'meteor/meteor';
 import { Session } from 'meteor/session';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import { ReactiveCache } from '/imports/reactiveCache';
 import Papa from 'papaparse';
 

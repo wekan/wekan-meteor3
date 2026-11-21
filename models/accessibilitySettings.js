@@ -3,7 +3,7 @@ import { Mongo } from 'meteor/mongo';
 
 import { ReactiveCache } from '/imports/reactiveCache';
 
-AccessibilitySettings = new Mongo.Collection('accessibilitySettings');
+const AccessibilitySettings = globalThis.AccessibilitySettings = new Mongo.Collection('accessibilitySettings');
 
 AccessibilitySettings.schema = 
   {

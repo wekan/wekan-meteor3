@@ -3,7 +3,7 @@ import { EasySchema } from 'meteor/jam:easy-schema';
 import { ReactiveCache } from '/imports/reactiveCache';
 import { ALLOWED_COLORS } from '/config/const';
 
-Swimlanes = new Mongo.Collection('swimlanes');
+const Swimlanes = globalThis.Swimlanes = new Mongo.Collection('swimlanes');
 
 /**
  * A swimlane is an line in the kaban board.

@@ -2,7 +2,7 @@ import { EasySchema } from 'meteor/jam:easy-schema';
 
 import { ReactiveCache } from '/imports/reactiveCache';
 
-Integrations = new Mongo.Collection('integrations');
+const Integrations = globalThis.Integrations = new Mongo.Collection('integrations');
 
 /**
  * Integration with third-party applications

@@ -4,7 +4,7 @@ import { ReactiveCache } from '/imports/reactiveCache';
 import escapeForRegex from 'escape-string-regexp';
 import DOMPurify from 'dompurify';
 
-CardComments = new Mongo.Collection('card_comments');
+const CardComments = globalThis.CardComments = new Mongo.Collection('card_comments');
 
 /**
  * A comment on a card

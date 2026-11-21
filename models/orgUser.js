@@ -1,6 +1,6 @@
 import { EasySchema } from 'meteor/jam:easy-schema';
 
-OrgUser = new Mongo.Collection('orgUser');
+const OrgUser = globalThis.OrgUser = new Mongo.Collection('orgUser');
 
 /**
  * A Organization User in wekan

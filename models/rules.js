@@ -3,7 +3,7 @@ import { EasySchema } from 'meteor/jam:easy-schema';
 import { ReactiveCache } from '/imports/reactiveCache';
 import { Meteor } from 'meteor/meteor';
 
-Rules = new Mongo.Collection('rules');
+const Rules = globalThis.Rules = new Mongo.Collection('rules');
 
 Rules.schema = 
   {

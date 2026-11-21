@@ -1,6 +1,6 @@
 import { EasySchema } from 'meteor/jam:easy-schema';
 
-SessionData = new Mongo.Collection('sessiondata');
+const SessionData = globalThis.SessionData = new Mongo.Collection('sessiondata');
 
 /**
  * A UserSessionData in Wekan. Organization in Trello.

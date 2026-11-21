@@ -2,7 +2,7 @@ import { Mongo } from 'meteor/mongo';
 import { ReactiveCache } from '/imports/reactiveCache';
 
 // Global collection definition
-Team = new Mongo.Collection('team');
+const Team = globalThis.Team = new Mongo.Collection('team');
 
 /**
  * A Team in Wekan. Organization in Trello.
