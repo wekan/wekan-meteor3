@@ -32,6 +32,11 @@ and fixes the following bugs:
 - [The client now starts in a browser: it is built with Rspack, implicit global collections are declared, and the five missing translation files es-CO, fr-BE, fr-CA, ja-JP and pt-PT are added from WeKan](https://github.com/wekan/wekan-meteor3/commit/a36e2a0fc35120ebf62646bfe83d711a80c74a69).
   Thanks to xet7.
 
+and has the following developer-tooling fix:
+
+- [Dependabot no longer runs a GitHub Actions update that could only fail: the workflows were removed in January 2025, and dependabot.yml had nothing else](https://github.com/wekan/wekan-meteor3/commit/8ac01a618533a36aa8673009cefd6c8cbaa68c7b).
+  Thanks to xet7.
+
 Thanks to above GitHub users for their contributions and translators for their translations.
 
 # v7.80 2025-01-12 WeKan ® release
